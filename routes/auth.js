@@ -27,7 +27,7 @@ router.post("/", async (req, res) => {
 		console.log("valid pass bruh");
 		res.status(200).send({ data: token, message: "logged in successfully" });
 	} catch (error) {
-		res.status(500).send({ message: "Internal Server Error" });
+		res.status(500).send({ message: "Internal Server Error abhi" });
 	}
 });
 
