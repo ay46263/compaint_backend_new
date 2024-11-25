@@ -10,7 +10,6 @@ router.post("/register", authController().register);
 router.post("/login", authController().login);
 
 //DEMO ROUTE TO DEBUG/TEST
-router.get("/", authController().demo);
 
 //report routes
 router.post("/submitReport", reportController().submitReport);
