@@ -16,11 +16,9 @@ const authRoutes = require("./routes/auth");
 
 // Database connection
 // "mongodb://127.0.0.1:27017/ComplaintDB" old
-let uri =
-  // "mongodb+srv://ved:test123@cluster0.1goshc7.mongodb.net/?retryWrites=true&w=majority";
-  "mongodb+srv://ay46263:rose_123@cluster0.2gbvxbf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
 mongoose
-  .connect(uri, {
+  .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
